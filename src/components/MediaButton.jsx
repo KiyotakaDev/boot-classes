@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 
-export const MediaButton = ({ media, index }) => {
+export const MediaButton = ({ media }) => {
   const [counter, setCounter] = useState(0);
 
   return (
-    <button className="btn" key={index}>
-      <img
-        src={media.icon}
-        alt={media.name}
-        onClick={() => setCounter(counter + 1)}
-      />
+    <div className="counter">
+      <a>
+        <img
+          src={media.icon}
+          alt={media.name}
+          onClick={() => setCounter(counter + 1)}
+        />
+      </a>
       <span>{counter}</span>
-    </button>
+    </div>
   );
 };

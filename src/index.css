@@ -86,8 +86,9 @@ body {
   color: var(--NEON-COLOR);
 }
 
-.btn {
-  outline: none;
-  background-color: transparent;
-  border: none;
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

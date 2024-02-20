@@ -14,7 +14,7 @@ const UserCard = ({ info }) => {
         <img className="dev-img" src={img_src} alt="name" />
         <div className="media">
           {socialMedia.map((media, index) => (
-            <MediaButton media={media} index={index} />
+            <MediaButton media={media} key={index} />
           ))}
         </div>
       </div>
