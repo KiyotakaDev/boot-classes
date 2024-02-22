@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: white;
+  background-color: #202020;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 90%;
+  gap: 3rem 0;
+  background-color: #303030;
+  border-radius: 3rem;
+}
+.card h1 {
+  font-size: 2rem;
+  color: #00FFF0;
+}
+.card p {
+  text-align: center;
+  width: 85%;
+}
+
+.cat-img {
+  width: 45%;
+  height: 45%;
+  object-fit: contain;
+}
+
+
+.rick-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 85%;
+  width: 75%;
+  border: 2px solid blue;
+}
+.upper-side {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  border: 2px solid green;
+  width: 80%;
+}
+.upper-side img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+.lower-side {
+  flex: 0.8;
+  border: 2px solid red;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
