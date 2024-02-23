@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #1a0f24;
+  color: white;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,4 +21,12 @@
   background-color: #1A0F24;
   color: white;
 
+}
+
+/* React Slick */
+.slick-slide > div {
+  margin: 0 2rem;
+}
+.slick-list {
+  margin: 0 -2rem;
 }
