@@ -16,7 +16,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="w-1/2 h-auto m-auto">
+    <div className="w-1/2 h-auto m-auto mt-20">
       <Slider {...settings}>
         {games.map((game) => (
           <div key={game.name}>
