@@ -1,26 +1,30 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import HomePage from '../Pages/HomePage'
-import GamePage from '../Pages/GamePage'
-import NavBar from '../components/NavBar'
-import About from '../Pages/About'
-import WikiPage from '../Pages/WikiPage'
-import ErrorPage from '../Pages/ErrorPage'
+import React, { Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+import NavBar from "../components/NavBar";
+
+// Pages
+import HomePage from "../Pages/HomePage";
+const CarouselPage = React.lazy(() => import("../Pages/CarouselPage"));
+const ProjectsPage = React.lazy(() => import("../Pages/ProjectsPage"));
+const AboutPage = React.lazy(() => import("../Pages/About"));
+const ErrorPage = React.lazy(() => import("../Pages/ErrorPage"));
 
 const AppRoutes = () => {
   return (
     <>
-      <NavBar />
-      <Routes>
-        <Route index element={<HomePage />} />
-        <Route path='/games' element={<GamePage />} />
-        <Route path='/wiki' element={<WikiPage />} />
-        <Route path='/about' element={<About />} />
+      <Suspense fallback={null}>
+        <NavBar />
+        <Routes>
+          <Route index element={<HomePage />} />
+          <Route path="/developers" element={<CarouselPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/about" element={<AboutPage />} />
 
-        <Route path='*' element={<ErrorPage />} />
-      </Routes>
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </Suspense>
     </>
-  )
-}
+  );
+};
 
-export default AppRoutes
+export default AppRoutes;

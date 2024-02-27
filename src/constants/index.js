@@ -1,27 +1,31 @@
+import { DevSvg, ProjectSvg, ProfileSvg } from "../components/svgs";
+
 // Navigation
 const navLinks = [
-  { name: "Developers", id: "developers" },
-  { name: "Projects", id: "projects" },
-  { name: "About me", id: "about" },
+  { name: "Developers", id: "/developers", Icon: DevSvg },
+  { name: "Projects", id: "/projects", Icon: ProjectSvg },
+  { name: "About me", id: "/about", Icon: ProfileSvg },
 ];
 
 // Dev data
 const devs = [
-    {
+  {
     name: "Brais Moure",
-    country: 'Spain',
-    charge: 'Software Engineer',
-    img_src: '/devs/brais.png',
-    company: 'Moure Dev Founder',
-    summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam quae veniam, est at non, accusantium animi minima id sint consequuntur asperiores quas rem facilis in porro nemo voluptatibus! Nulla.'
+    country: "Spain",
+    charge: "Software Engineer",
+    img_src: "/devs/brais.png",
+    company: "Moure Dev Founder",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam quae veniam, est at non, accusantium animi minima id sint consequuntur asperiores quas rem facilis in porro nemo voluptatibus! Nulla.",
   },
   {
     name: "Migel Angel Duran",
-    country: 'Spain',
-    charge: 'Software Engineer',
-    img_src: '/devs/midu.png',
-    company: 'None',
-    summary: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam quae veniam, est at non, accusantium animi minima id sint consequuntur asperiores quas rem facilis in porro nemo voluptatibus! Nulla.'
+    country: "Spain",
+    charge: "Software Engineer",
+    img_src: "/devs/midu.png",
+    company: "None",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam quae veniam, est at non, accusantium animi minima id sint consequuntur asperiores quas rem facilis in porro nemo voluptatibus! Nulla.",
   },
   {
     name: "Lucas Dalto",
@@ -32,12 +36,12 @@ const devs = [
     summary:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam quae veniam, est at non, accusantium animi minima id sint consequuntur asperiores quas rem facilis in porro nemo voluptatibus! Nulla.",
   },
-]
+];
 const socialMedia = [
   { name: "Linkedin", icon: "/icons/linkedin.svg" },
   { name: "Twitter", icon: "/icons/twitter-x.svg" },
   { name: "Youtube", icon: "/icons/youtube.svg" },
-]
+];
 
 // Projects
 const colors = {
@@ -59,7 +63,7 @@ const projects = [
       { name: "Framer Motion", color: colors.framer },
       { name: "React Router", color: colors.router },
     ],
-    image: () => import("/projects/chappy-project.png"),
+    image: () => import("/projects/Portfolio.png"),
     source_code_link: "https://github.com/KiyotakaDev/Portfolio",
     deploy_link: "https://portfolio-virid-seven-69.vercel.app/",
   },
@@ -71,11 +75,11 @@ const projects = [
       { name: "Vite", color: colors.vite },
       { name: "Tailwind", color: colors.tailwind },
       { name: "Zustand", color: colors.zustand },
-      { name: "React Router", color: colors.router }
+      { name: "React Router", color: colors.router },
     ],
     image: () => import("/projects/Pokemon-API.png"),
     source_code_link: "https://github.com/KiyotakaDev/PokeApi",
-    deploy_link: "https://testing-olive-alpha.vercel.app/"
+    deploy_link: "https://testing-olive-alpha.vercel.app/",
   },
 ];
 
