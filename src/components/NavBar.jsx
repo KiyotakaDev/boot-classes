@@ -1,7 +1,7 @@
 import React from "react";
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
-import { Theme } from "./svgs";
+import { Theme } from "./nav.svgs";
 
 const NavLinks = () => {
   return (
@@ -18,7 +18,7 @@ const NavLinks = () => {
       {navLinks.map((link) => (
         <li key={link.name}>
           <Link to={link.id}>
-            <link.Icon color={"white"} size={30} text={link.name} />
+            <link.Icon size={30} text={link.name} />
           </Link>
         </li>
       ))}
@@ -28,7 +28,7 @@ const NavLinks = () => {
 
 const NavBar = () => {
   return (
-    <div className="flex ">
+    <div className="flex">
       <nav className="fixed top-0 left-0 h-screen w-[8%] m-0 flex flex-col  shadow-lg bg-slate-300 text-black dark:bg-leveled-950">
         <div className="h-[85%]">
           <NavLinks />
