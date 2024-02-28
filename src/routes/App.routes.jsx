@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 
 // Pages
 import HomePage from "../Pages/HomePage";
-const CarouselPage = React.lazy(() => import("../Pages/CarouselPage"));
+const DevsPage = React.lazy(() => import("../Pages/DevsPage"));
 const ProjectsPage = React.lazy(() => import("../Pages/ProjectsPage"));
 const AboutPage = React.lazy(() => import("../Pages/About"));
 const ErrorPage = React.lazy(() => import("../Pages/ErrorPage"));
@@ -16,7 +16,7 @@ const AppRoutes = () => {
         <NavBar />
         <Routes>
           <Route index element={<HomePage />} />
-          <Route path="/developers" element={<CarouselPage />} />
+          <Route path="/developers" element={<DevsPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/about" element={<AboutPage />} />
 
