@@ -9,9 +9,12 @@ const CarouselPage = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 4000,
+    autoplaySpeed: 1000,
+    ccsEase: "ease-in",
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
     centerMode: true,
   };
 
