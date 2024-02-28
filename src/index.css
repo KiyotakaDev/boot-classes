@@ -13,7 +13,7 @@
 
 @layer components {
   body {
-    @apply dark:bg-leveled-800 dark:text-white transition-colors duration-300 ease-in-out;
+    @apply bg-slate-200 dark:bg-leveled-800 dark:text-white transition-colors duration-300 ease-in-out;
   }
 
   .sidebar-icon {
@@ -23,9 +23,15 @@
   .sidebar-tooltip {
     @apply absolute w-auto p-2 m-4 min-w-max left-14 rounded-md shadow-md text-white bg-blue-500 dark:bg-leveled-600 text-xs font-bold transition-all duration-100 scale-0 origin-left;
   }
+
+  
+
+  .nav-svg, .dev-svg {
+    @apply fill-black dark:fill-sky-200  hover:scale-125 transition-transform duration-200 ease-out cursor-pointer;
+  }
 }
 
 /* CSS */
 main {
-  margin-left: 10%;
+  margin-left: 12%;
 }
