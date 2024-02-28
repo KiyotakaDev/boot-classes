@@ -1,4 +1,5 @@
-import { DevSvg, ProjectSvg, ProfileSvg } from "../components/svgs";
+import { DevSvg, ProjectSvg, ProfileSvg } from "../components/nav.svgs";
+import { Linkedin, X, YouT } from "../components/dev.svgs";
 
 // Navigation
 const navLinks = [
@@ -12,35 +13,35 @@ const devs = [
   {
     name: "Brais Moure",
     country: "Spain",
-    charge: "Software Engineer",
-    img_src: "/devs/brais.png",
-    company: "Moure Dev Founder",
+    charge: "Freelance, Content Creator",
+    img_src: "/devs/brais.jpg",
     summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam quae veniam, est at non, accusantium animi minima id sint consequuntur asperiores quas rem facilis in porro nemo voluptatibus! Nulla.",
+    "I am a freelance IT entrepreneur and technology lover. I have worked in large companies in the sector such as Inditex, Indra or Altia. I spent my last 3 years, before establishing myself as a freelancer, as a Software Architect in the Logistics-Commercial area of Inditex.",
+    linkedin_url: "https://www.linkedin.com/in/braismoure/"
   },
   {
-    name: "Migel Angel Duran",
+    name: "Miguel Angel Duran",
     country: "Spain",
-    charge: "Software Engineer",
-    img_src: "/devs/midu.png",
-    company: "None",
+    charge: "Software Engineer, Content Creator",
+    img_src: "/devs/miguel.jpg",
     summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam quae veniam, est at non, accusantium animi minima id sint consequuntur asperiores quas rem facilis in porro nemo voluptatibus! Nulla.",
-  },
-  {
-    name: "Lucas Dalto",
-    country: "Argentina",
-    charge: "Software Engineer",
-    img_src: "/devs/dalto.jpg",
-    company: "None",
-    summary:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam quae veniam, est at non, accusantium animi minima id sint consequuntur asperiores quas rem facilis in porro nemo voluptatibus! Nulla.",
-  },
-];
-const socialMedia = [
-  { name: "Linkedin", icon: "/icons/linkedin.svg" },
-  { name: "Twitter", icon: "/icons/twitter-x.svg" },
-  { name: "Youtube", icon: "/icons/youtube.svg" },
+      "Miguel Ángel Durán is a Content Creator about Programming and Technology as well as a Software Engineer, with more than 15 years of experience. He has a community of more than 700k followers on his social networks. His programming channel on Twitch is one of the most viewed in the world.",
+      linkedin_url: "https://www.linkedin.com/in/midudev/"
+    },
+    {
+      name: "Lucas Dalto",
+      country: "Argentina",
+      charge: "Software Engineer, Content Creator",
+      img_src: "/devs/lucas.jpg",
+      summary:
+      "My name is Lucas Dalto, I'm a programmer, develper, marketer and content creator on the YouTube platform, more than 6 yeasr is the IT field, I Teach programming and channel #1 in Argentina with free boradcasting.",
+      linkedin_url: "https://www.linkedin.com/in/soy-dalto/"
+    },
+  ];
+  const socialMedia = [
+    { name: "Linkedin", icon: Linkedin },
+    { name: "Twitter", icon: X },
+    { name: "Youtube", icon: YouT },
 ];
 
 // Projects
