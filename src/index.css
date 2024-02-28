@@ -24,14 +24,20 @@
     @apply absolute w-auto p-2 m-4 min-w-max left-14 rounded-md shadow-md text-white bg-blue-500 dark:bg-leveled-600 text-xs font-bold transition-all duration-100 scale-0 origin-left;
   }
 
-  
-
   .nav-svg, .dev-svg {
     @apply fill-black dark:fill-sky-200  hover:scale-125 transition-transform duration-200 ease-out cursor-pointer;
+  }
+
+  b {
+    @apply dark:text-leveled-300;
   }
 }
 
 /* CSS */
 main {
   margin-left: 12%;
+}
+
+.c-list > li {
+  margin-bottom: 3rem;
 }
