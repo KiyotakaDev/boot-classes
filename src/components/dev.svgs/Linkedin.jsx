@@ -1,11 +1,11 @@
 import React from "react";
 
-const Linkedin = ({ size }) => {
+const Linkedin = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={size}
-      height={size}
+      width="16"
+      height="16"
       fill="currentColor"
       className="dev-svg"
       viewBox="0 0 16 16"
