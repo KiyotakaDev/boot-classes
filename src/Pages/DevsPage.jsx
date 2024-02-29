@@ -21,7 +21,7 @@ const CarouselPage = () => {
   return (
     <main className="relative h-screen">
       <div className="w-[95%] absolute top-[5%]">
-      <h1 className="text-center text-3xl font-bold mb-[5%]">Developers</h1>
+      <h1 className="text-4xl font-bold mb-[4%]">Developers</h1>
         <Slider {...settings}>
           {devs .map((dev) => (
             <div key={dev.name}>
