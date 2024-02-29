@@ -1,8 +1,9 @@
-import { DevSvg, ProjectSvg, ProfileSvg } from "../components/nav.svgs";
+import { DevSvg, ProjectSvg, ProfileSvg, Home } from "../components/nav.svgs";
 import { Linkedin, X, YouT } from "../components/dev.svgs";
 
 // Navigation
 const navLinks = [
+  { name: "Home", id: "/", Icon: Home },
   { name: "Developers", id: "/developers", Icon: DevSvg },
   { name: "Projects", id: "/projects", Icon: ProjectSvg },
   { name: "About me", id: "/about", Icon: ProfileSvg },
