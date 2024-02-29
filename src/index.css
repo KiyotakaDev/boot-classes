@@ -43,7 +43,7 @@
 
 @layer components {
   .sidebar-icon {
-    @apply flex items-center justify-center m-2 bg-cyan-400 dark:bg-leveled-700 h-16 w-16 hover:bg-blue-500 hover:dark:bg-leveled-500 rounded-3xl hover:rounded-xl active:scale-75 transition-all duration-300 ease-out cursor-pointer
+    @apply relative flex items-center justify-center my-2 bg-cyan-400 dark:bg-leveled-700 h-16 w-16 hover:bg-blue-500 hover:dark:bg-leveled-500 rounded-3xl hover:rounded-xl active:scale-75 transition-all duration-300 ease-out cursor-pointer
     /* sm */
     sm:h-24 sm:w-24 sm:rounded-[2rem] sm:hover:rounded-2xl
     /* md */
@@ -54,11 +54,20 @@
   }
 
   .sidebar-tooltip {
-    @apply absolute w-auto p-2 m-4 min-w-max left-14 rounded-md shadow-md text-white bg-blue-500 dark:bg-leveled-600 text-xs font-bold transition-all duration-100 scale-0 origin-left;
+    @apply absolute text-lg text-center bg-cyan-500 dark:bg-leveled-600 rounded-xl p-2 text-white shadow-md shadow-slate-800 dark:shadow-leveled-500 -top-16 font-bold transition-all duration-200 scale-0 origin-bottom
+    /* lg */
+    lg:top-auto lg:left-[8.5rem] lg:origin-left lg:text-2xl
+    ;
   }
 
   .nav-svg, .dev-svg {
-    @apply fill-black dark:fill-sky-200  hover:scale-125 transition-transform duration-200 ease-out cursor-pointer;
+    @apply fill-black dark:fill-sky-200  hover:scale-125 transition-transform duration-200 ease-out cursor-pointer size-6
+    /* sizes */
+    /* sm */
+    sm:size-9
+    /* lg */
+    lg:size-12
+    ;
   }
 
   b {
@@ -67,10 +76,6 @@
 }
 
 /* CSS */
-main {
-  margin-left: 12%;
-}
-
 .c-list > li {
   margin-bottom: 3rem;
 }

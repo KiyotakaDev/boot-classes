@@ -3,28 +3,18 @@ import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
 import { Theme } from "./nav.svgs";
 
-const NavLinks = () => {
-  return (
-    <ul className="flex flex-row lg:flex-col justify-between items-center p-2 lg:h-full">
-      {navLinks.map((link) => (
-        <li key={link.name} className="">
-          <Link to={link.id}>
-            <link.Icon size={30} text={link.name} />
-          </Link>
-        </li>
-      ))}
-      <div>
-        <Theme color={"white"} size={24} text={"Change theme"} />
-      </div>
-    </ul>
-  );
-};
-
 const NavBar = () => {
   return (
-    <nav className="fixed z-10 bottom-0 left-0 bg-cyan-300 dark:bg-leveled-900 w-full h-auto overflow-x-scroll lg:top-0 lg:h-screen lg:w-[8.5rem]">
-      <NavLinks />
-    </nav>
+    <div className="flex">
+      <nav className="z-10 flex flex-row justify-around items-center lg:flex-col bg-cyan-300 dark:bg-leveled-900 fixed bottom-0 lg:top-0 lg:left-0 w-full lg:w-36 lg:h-screen m-0 shadow-lg">
+        {navLinks.map((link) => (
+          <Link key={link.name} to={link.id}>
+            <link.Icon text={link.name} />
+          </Link>
+        ))}
+        <Theme />
+      </nav>
+    </div>
   );
 };
 
