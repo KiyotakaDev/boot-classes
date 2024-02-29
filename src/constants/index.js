@@ -45,24 +45,16 @@ const devs = [
 ];
 
 // Projects
-const colors = {
-  vite: "from-white via-blue-500 to-blue-700",
-  tailwind: "rom-white via-neon to-sky-500",
-  zustand: "from-white via-orange-500 to-amber-700",
-  router: "from-white via-emerald-500 to-green-700",
-  three: "from-white via-pink-500 to-red-700",
-  framer: "",
-};
 const projects = [
   {
     name: "Portfolio",
-    description: "My personal portfolio.",
+    description: "My personal portfolio :D.",
     tags: [
-      { name: "Vite", color: colors.vite },
-      { name: "Tailwind", color: colors.tailwind },
-      { name: "ThreeJS", color: colors.three },
-      { name: "Framer Motion", color: colors.framer },
-      { name: "React Router", color: colors.router },
+      { name: "Vite", id: "vite" },
+      { name: "Tailwind", id: "tailwind" },
+      { name: "ThreeJS", id: "three" },
+      { name: "Framer Motion", id: "framer" },
+      { name: "React Router", id: "router" },
     ],
     image: () => import("/projects/Portfolio.png"),
     source_code_link: "https://github.com/KiyotakaDev/Portfolio",
@@ -71,17 +63,27 @@ const projects = [
   {
     name: "PokeAPI",
     description:
-      "API consumptio for sampling data fetched from the PokeAPI, filtered by type, and searchable by name or character.",
+      "API consumptio for sampling data fetched from the PokeAPI, searchable by name or character.",
     tags: [
-      { name: "Vite", color: colors.vite },
-      { name: "Tailwind", color: colors.tailwind },
-      { name: "Zustand", color: colors.zustand },
-      { name: "React Router", color: colors.router },
+      { name: "Vite", id: "vite" },
+      { name: "Tailwind", id: "tailwind" },
+      { name: "Zustand", id: "zustand" },
+      { name: "React Router", id: "router" },
     ],
     image: () => import("/projects/Pokemon-API.png"),
     source_code_link: "https://github.com/KiyotakaDev/PokeApi",
     deploy_link: "https://testing-olive-alpha.vercel.app/",
   },
+  {
+    name: "Heisig Template",
+    description: "Anki template with Japanese recognition for Kanji learning.",
+    tags: [
+      { name: "HTLM", id: "three" },
+      { name: "CSS", id: "tailwind" },
+    ],
+    image: () => import("/projects/heisig.png"),
+    source_code_link: "https://github.com/KiyotakaDev/Portfolio",
+  }
 ];
 
 // About me
