@@ -5,7 +5,8 @@ import { projects } from '../constants';
 const ProjectsPage = () => {
   return (
     <main>
-      <div className='w-full h-screen flex flex-col lg:flex-row justify-center items-center'>
+      <h2 className='font-bold text-4xl py-[4%]'>Projects</h2>
+      <div className='flex flex-col lg:flex-row mr-10'>
         {projects.map((project) => (
           <ProjectCard key={project.name} data={project} />
         ))}
