@@ -1,12 +1,12 @@
 import React from "react";
 
-const ProfileSvg = ({ size, text='tooltip' }) => {
+const ProfileSvg = ({ text='tooltip' }) => {
   return (
     <div className="sidebar-icon group">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width={size}
-          height={size}
+          width="16"
+          height="16"
           fill="currentColor"
           className="nav-svg"
           viewBox="0 0 16 16"
