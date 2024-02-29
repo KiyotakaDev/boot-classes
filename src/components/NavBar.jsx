@@ -29,7 +29,7 @@ const NavLinks = () => {
 const NavBar = () => {
   return (
     <div className="flex">
-      <nav className="fixed top-0 left-0 h-screen w-[8%] m-0 flex flex-col  shadow-lg bg-slate-300 text-black dark:bg-leveled-950">
+      <nav className="fixed top-0 left-0 h-screen w-[8%] m-0 flex flex-col  shadow-lg bg-blue-200 text-black dark:bg-leveled-950">
         <div className="h-[85%]">
           <NavLinks />
         </div>
