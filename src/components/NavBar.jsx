@@ -11,7 +11,9 @@ const NavBar = () => {
           <NavLink
             key={link.name}
             to={link.id}
-            className={({ isActive }) => isActive ? "px-2 transition-all duration-700 bg-cyan-800 dark:bg-white rounded-3xl" : ""}
+            className={({ isActive }) =>
+              isActive ? " bg-cyan-800 dark:bg-white scale-90 transition-all duration-500 rounded-full sm:rounded-3xl lg:rounded-[2.5rem]" : ""
+            }
           >
             <link.Icon text={link.name} />
           </NavLink>
