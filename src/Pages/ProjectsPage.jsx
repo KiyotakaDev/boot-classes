@@ -5,7 +5,7 @@ import { projects } from "../constants";
 const ProjectsPage = () => {
   return (
     <main>
-      <h1 className="text-white text-4xl font-bold mb-12 light-neon-shadow dark:dark-neon-shadow">
+      <h1 className="page-title">
         Projects
       </h1>
 

@@ -49,7 +49,7 @@ const CarouselPage = () => {
   return (
     <main className="relative h-auto">
       <div className="w-full lg:w-[95%] absolute">
-        <h1 className="text-white text-4xl font-bold mb-12 light-neon-shadow dark:dark-neon-shadow">
+        <h1 className="page-title">
           Developers
         </h1>
         <Slider {...settings}>

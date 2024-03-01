@@ -6,8 +6,8 @@ import Experience_Education from "../components/Experience_Education";
 const About = () => {
   return (
     <main className="relative h-screen">
-      <div className="w-[95%] absolute top-[5%]">
-        <h1 className="text-4xl font-bold mb-[4%]">About me</h1>
+      <div className="w-[95%] absolute">
+        <h1 className="page-title">About me</h1>
 
         <div className="mx-auto w-full p-4">
           <div className="mb-8">

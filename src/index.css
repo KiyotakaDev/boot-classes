@@ -17,9 +17,7 @@
   }
 
   main {
-    @apply my-4 mx-8 
-    /* sm */
-    sm:mx-12 sm:my-10
+    @apply m-12 
     /* lg */
     lg:ml-40 lg:mt-20 lg:mr-10
     /* xl */
@@ -50,6 +48,10 @@
   }
   .light-neon-shadow {
     text-shadow: 0 0 10px #c261a1, 0 0 20px #c261a1, 0 0 30px #c261a1;
+  }
+
+  .page-title {
+    @apply text-white text-4xl font-bold mb-12 light-neon-shadow dark:dark-neon-shadow;
   }
 }
 
