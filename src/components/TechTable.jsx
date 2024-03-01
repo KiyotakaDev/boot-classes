@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const TechTable = ({ tech }) => {
+const TechTable = ({ tech, i }) => {
   const { name, icon, level } = tech;
 
   const [resolverdURL, setResolverdURL] = useState(null);
@@ -22,12 +22,18 @@ const TechTable = ({ tech }) => {
   }, []);
 
   return (
-    <tr>
-      <th className="flex flex-col justify-center items-center my-4">
+    <tr
+      className={
+        i % 2 == 0
+          ? "bg-cyan-200 dark:bg-leveled-600"
+          : "bg-cyan-300 dark:bg-leveled-700"
+      }
+    >
+      <th className="flex flex-col justify-center items-center py-6">
         {resolverdURL ? (
           <img src={resolverdURL} alt={name} className="w-14 h-14" />
         ) : null}
-        <span className="font-bold text-md text-slate-600 dark:text-white dark:light-neon-shadow">
+        <span className="font-bold text-md text-slate-600 dark:text-white dark:dark-neon-shadow">
           {name}
         </span>
       </th>
