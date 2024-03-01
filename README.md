@@ -14,4 +14,4 @@
 
 - [Workshop #1](https://github.com/KiyotakaDev/boot-classes/tree/workshop-1)
 
-In process
+![Workshop #1](/assets/workshop_1.png)
