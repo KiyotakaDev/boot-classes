@@ -3,11 +3,11 @@ import React from "react";
 const HomePage = () => {
   return (
     <main className="w-[85%] mt-[4%]">
-      <h1 className="text-5xl font-bold mb-2">Workshop #1</h1>
-      <p className="text-3xl font-semibold text-blue-800 dark:text-leveled-300 transition-colors duration-300 ease-out">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2">Workshop #1</h1>
+      <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-blue-800 dark:text-leveled-300 transition-colors duration-300 ease-out">
         Overview
       </p>
-      <ol className="c-list list-decimal px-10 text-3xl mt-10">
+      <ol className="custom-list list-decimal px-10 text-xl md:text-2xl lg:text-3xl mt-10">
         <li>
           Add in the <b>Developers</b> menu, the carousel of developers images,
           each slide must have the <b>full name</b> of the deveoper, their{" "}

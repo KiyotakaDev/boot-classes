@@ -15,6 +15,18 @@
   body {
     @apply bg-blue-100 dark:bg-leveled-800 dark:text-white transition-colors duration-300 ease-in-out;
   }
+
+  main {
+    @apply my-4 mx-8 
+    /* sm */
+    sm:mx-12 sm:my-10
+    /* lg */
+    lg:ml-40 lg:mt-20 lg:mr-10
+    /* xl */
+    xl:ml-48 xl:mt-24 xl:mr-14
+    ;
+  }
+
   .vite {
     @apply from-yellow-400 from-30% via-pink-500 to-blue-300;
   }
@@ -43,7 +55,7 @@
 
 @layer components {
   .sidebar-icon {
-    @apply relative flex items-center justify-center my-2 bg-cyan-400 dark:bg-leveled-700 h-16 w-16 hover:bg-blue-500 hover:dark:bg-leveled-500 rounded-3xl hover:rounded-xl active:scale-75 transition-all duration-300 ease-out cursor-pointer
+    @apply relative flex items-center justify-center my-2 bg-cyan-400 dark:bg-leveled-700 h-16 w-16 hover:bg-cyan-200 hover:dark:bg-leveled-500 rounded-3xl hover:rounded-xl active:scale-75 transition-all duration-300 ease-out cursor-pointer
     /* sm */
     sm:h-24 sm:w-24 sm:rounded-[2rem] sm:hover:rounded-2xl
     /* md */
@@ -60,8 +72,8 @@
     ;
   }
 
-  .nav-svg, .dev-svg {
-    @apply fill-black dark:fill-sky-200  hover:scale-125 transition-transform duration-200 ease-out cursor-pointer size-6
+  .nav-svg {
+    @apply fill-black dark:fill-sky-200  hover:scale-125 transition-all duration-200 ease-out cursor-pointer size-6
     /* sizes */
     /* sm */
     sm:size-9
@@ -69,13 +81,18 @@
     lg:size-12
     ;
   }
+  .dev-svg {
+    @apply fill-black dark:fill-sky-200 hover:scale-125 transition-all duration-200 size-6
+    /* Sizes */
+    /* md */
+    md:size-8
+    ;
+  }
 
   b {
     @apply dark:text-leveled-300;
   }
-}
-
-/* CSS */
-.c-list > li {
-  margin-bottom: 3rem;
+  .custom-list > li {
+    @apply mb-6 md:mb-8 lg:mb-12 ;
+  }
 }

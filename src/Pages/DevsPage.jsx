@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { devs } from '../constants'
+import { devs } from "../constants";
 import DevCard from "../components/DevCard";
 
 const CarouselPage = () => {
@@ -12,18 +12,48 @@ const CarouselPage = () => {
     speed: 4000,
     autoplaySpeed: 1000,
     ccsEase: "ease-in",
-    slidesToShow: 3,
-    slidesToScroll: 1,
     autoplay: true,
-    centerMode: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1536,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0,
+        },
+      }
+    ],
   };
 
   return (
-    <main className="relative h-screen">
-      <div className="w-[95%] absolute top-[5%]">
-      <h1 className="text-4xl font-bold mb-[4%]">Developers</h1>
+    <main className="relative h-auto">
+      <div className="w-full lg:w-[95%] absolute">
+        <h1 className="text-white text-4xl font-bold mb-12 light-neon-shadow dark:dark-neon-shadow">
+          Developers
+        </h1>
         <Slider {...settings}>
-          {devs .map((dev) => (
+          {devs.map((dev) => (
             <div key={dev.name}>
               <DevCard dev={dev} />
             </div>

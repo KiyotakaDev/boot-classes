@@ -74,7 +74,7 @@ const ProjectCard = ({ data }) => {
         transformStyle: "preserve-3d",
         transform: `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,   
       }}
-      className="w-full lg:w-[40%] bg-gradient-to-br from-cyan-300 dark:from-leveled-400 to-cyan-700 dark:to-leveled-600 transition-colors duration-500 ease-out  to-50% p-6 mr-6 rounded-2xl shadow-2xl shadow-neon dark:shadow-leveled-200 h-auto"
+      className="w-full lg:w-[40%] bg-gradient-to-br from-cyan-300 dark:from-leveled-400 to-cyan-700 dark:to-leveled-600 transition-colors duration-500 ease-out  to-50% p-6 mx-2 rounded-2xl shadow-2xl shadow-black dark:shadow-leveled-200 h-auto"
     >
       {/* Cristal */}
       <div
@@ -102,10 +102,10 @@ const ProjectCard = ({ data }) => {
         </div>
 
         <div className="text-cyan-100">
-          <h3 className="text-xl py-4 tracking-wider font-bold light-neon-shadow dark:dark-neon-shadow">
+          <h3 className="text-2xl lg:text-3xl py-4 tracking-wider font-bold light-neon-shadow dark:dark-neon-shadow">
             {name}
           </h3>
-          <p className="text-lg font-semibold">
+          <p className="text-xl md:text-2xl font-semibold">
             {description}{" "}
             {deploy_link ? (
               <Link
@@ -118,7 +118,7 @@ const ProjectCard = ({ data }) => {
           </p>
         </div>
 
-        <div className="mt-5 flex flex-wrap gap-5">
+        <div className="mt-5 text-xl md:text-2xl flex flex-wrap gap-5">
           {tags.map((tag) => (
             <p
               key={tag.name}
