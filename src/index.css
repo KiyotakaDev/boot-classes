@@ -65,7 +65,7 @@
     /* sm */
     sm:text-2xl
     /* lg */
-    lg:text-2xl
+    lg:text-3xl
     ;
   }
   .about-place {
@@ -77,11 +77,11 @@
     ;
   }
   .about-date {
-    @apply font-bold text-sm
+    @apply font-bold text-base
     /* sm */
-    sm:text-base
+    sm:text-lg
     /* lg */
-    lg:text-lg
+    lg:text-xl
     ;
   }
   .about-points {
