@@ -31,13 +31,13 @@ const TechTable = ({ tech, i }) => {
     >
       <th className="flex flex-col justify-center items-center py-6">
         {resolverdURL ? (
-          <img src={resolverdURL} alt={name} className="w-14 h-14" />
+          <img src={resolverdURL} alt={name} className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14" />
         ) : null}
-        <span className="font-bold text-md text-slate-600 dark:text-white dark:dark-neon-shadow">
+        <span className="font-bold text-xs sm:text-base md:text-lg text-slate-600 dark:text-white dark:dark-neon-shadow">
           {name}
         </span>
       </th>
-      <th className="text-xl">{level}</th>
+      <th className="text-sm sm:text-base md:text-xl">{level}</th>
     </tr>
   );
 };

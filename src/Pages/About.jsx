@@ -15,14 +15,14 @@ const About = () => {
         </div>
 
         {/* Technologies */}
-        <div className="w-full h-[60%] overflow-y-scroll">
-          <table className="w-full table-auto border-collapse border-2 border-white">
+        <div className="w-full h-[60%] overflow-y-scroll flex justify-center items-cente">
+          <table className="w-full table-auto border-collapse lg:border-2 border-white">
             <thead>
               <tr className="bg-cyan-300 dark:bg-leveled-700">
-                <th className="p-4 text-xl font-bold">
+                <th className="p-4 text-sm sm:text-lg lg:text-xl font-bold">
                   Technologies/Tools
                 </th>
-                <th className="p-4 text-xl font-bold">
+                <th className="p-4 text-sm sm:text-lg lg:text-xl font-bold">
                   Experience Level
                 </th>
               </tr>
