@@ -7,7 +7,6 @@ import HomePage from "../Pages/HomePage";
 const DevsPage = React.lazy(() => import("../Pages/DevsPage"));
 const ProjectsPage = React.lazy(() => import("../Pages/ProjectsPage"));
 const AboutPage = React.lazy(() => import("../Pages/About"));
-const ErrorPage = React.lazy(() => import("../Pages/ErrorPage"));
 
 const AppRoutes = () => {
   return (
