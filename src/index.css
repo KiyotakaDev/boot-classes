@@ -13,15 +13,15 @@
 
 @layer utilities {
   body {
-    @apply bg-blue-100 dark:bg-leveled-800 dark:text-white transition-colors duration-300 ease-in-out;
+    @apply bg-cyan-50 dark:bg-leveled-800 dark:text-white transition-colors duration-300 ease-in-out;
   }
 
   main {
     @apply m-12 
     /* lg */
-    lg:ml-40 lg:mt-20 lg:mr-10
+    lg:ml-40 lg:mt-12 lg:mr-10
     /* xl */
-    xl:ml-48 xl:mt-24 xl:mr-14
+    xl:ml-48 xl:mr-14
     ;
   }
 
@@ -51,7 +51,46 @@
   }
 
   .page-title {
-    @apply text-white text-4xl font-bold mb-12 light-neon-shadow dark:dark-neon-shadow;
+    @apply text-cyan-300 dark:text-white text-4xl font-bold mb-12 dark:dark-neon-shadow;
+  }
+
+  .about-title {
+    @apply text-2xl font-bold text-cyan-600 dark:text-leveled-200
+    /* lg */
+    lg:text-3xl
+    ;
+  }
+  .about-charge {
+    @apply text-xl font-bold
+    /* sm */
+    sm:text-2xl
+    /* lg */
+    lg:text-2xl
+    ;
+  }
+  .about-place {
+    @apply text-lg text-slate-600 dark:text-leveled-300 font-bold
+    /* sm */
+    sm:text-xl
+    /* lg */
+    lg:text-2xl
+    ;
+  }
+  .about-date {
+    @apply font-bold text-sm
+    /* sm */
+    sm:text-base
+    /* lg */
+    lg:text-lg
+    ;
+  }
+  .about-points {
+    @apply text-lg mt-3
+    /* sm */
+    sm:text-xl
+    /* lg */
+    lg:text-2xl
+    ;
   }
 }
 

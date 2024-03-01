@@ -5,17 +5,17 @@ import Experience_Education from "../components/Experience_Education";
 
 const About = () => {
   return (
-    <main>
+    <main className="h-[85vh]">
       <h1 className="page-title">About me</h1>
 
-      <div className="w-full h-screen pb-24">
+      <div className="w-full h-[90%] mb-36">
         {/* Expereince */}
-        <div className="w-full h-1/2 overflow-y-scroll mb-12">
+        <div className="w-full h-[40%] overflow-y-scroll mb-8">
           <Experience_Education />
         </div>
 
         {/* Technologies */}
-        <div className="w-full h-1/2 overflow-y-scroll">
+        <div className="w-full h-[60%] overflow-y-scroll">
           <table className="w-full table-auto border-collapse border-2 border-white">
             <thead>
               <tr className="bg-cyan-300 dark:bg-leveled-700">
