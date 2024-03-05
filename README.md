@@ -15,3 +15,7 @@
 - [Workshop #1](https://github.com/KiyotakaDev/boot-classes/tree/workshop-1)
 
 ![Workshop #1](/assets/workshop_1.png)
+
+- [Laboratory #2](https://github.com/KiyotakaDev/boot-classes/tree/laboratory-2)
+
+![Lab_2](/assets/lab_2.png)
