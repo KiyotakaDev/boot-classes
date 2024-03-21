@@ -1,0 +1,16 @@
+{
+  "name": "boot-classes",
+  "version": "1.0.0",
+  "description": "Here I'm going to show the commnads used for docker.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.1"
+  }
+}
