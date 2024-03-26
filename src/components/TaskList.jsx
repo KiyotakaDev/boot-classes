@@ -28,7 +28,7 @@ const TaskList = () => {
 
   return (
     <div className="contain">
-      <h2 className="text-center text-5xl font-bold my-6">Task list</h2>
+      <h2 className="contain-title">Task list</h2>
       <div className="w-[90%] mx-auto flex gap-x-4">
         <input
           type="text"

@@ -35,8 +35,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
-      <h2>Formulario de Contacto</h2>
+    <div className='contain'>
+      <h2 className='contain-title'>Contact Form</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

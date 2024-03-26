@@ -22,7 +22,7 @@ const PokeFetch = ({ pokemonNumber }) => {
   }
 
   return (
-    <div>
+    <div className='contain'>
       <h2>{pokemon.name}</h2>
       <img src={pokemon.sprites.front_default} alt={pokemon.name} />
       <h3>Abilities:</h3>
