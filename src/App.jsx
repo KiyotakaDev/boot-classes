@@ -13,7 +13,7 @@ const App = () => {
         <ContactForm />
       </section>
       <section>
-        <PokeFetch pokemonNumber={Math.floor(Math.random() * 1000)} />
+        <PokeFetch pokemonNumber={Math.floor(Math.random() * 200)} />
       </section>
     </>
   )

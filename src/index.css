@@ -5,6 +5,39 @@
   scroll-behavior: smooth;
 }
 
+/* Variables */
+:root {
+  --fire-color: #ff7402;
+  --grass-color: #9bcc50;
+  --steel-color: #9eb7b8;
+  --water-color: #4592c4;
+  --psychic-color: #f366b9;
+  --ground-color: #ab9842;
+  --ice-color: #51c4e7;
+  --flying-color: #3dc7ef;
+  --ghost-color: #4d5b64;
+  --normal-color: #a4acaf;
+  --poison-color: #7e0058;
+  --rock-color: #a38c21;
+  --fighting-color: #d56723;
+  --dark-color: #707070;
+  --bug-color: #729f3f;
+  --dragon-color: linear-gradient(180deg, #53a4cf 30%, #f16e57 80%);
+  --electric-color: #bba909;
+  --fairy-color: #fdb9e9;
+  --shadow-color: #7b62a3;
+  --unknow-color: #757575;
+
+  --hp-color: #58ca37;
+  --attack-color: #F0313D;
+  --defense-color: #fd7700;
+  --sp-Attack-color: #fd4788;
+  --sp-Defense-color: #fece00;
+  --speed-color: #5c91f6;
+
+  --back-color: #e3eddf;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
