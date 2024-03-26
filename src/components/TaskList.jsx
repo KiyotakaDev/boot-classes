@@ -55,7 +55,7 @@ const TaskList = () => {
       </div>
       <div className="w-[90%] h-[70%] mb-10 p-4 grid grid-cols-3 mx-auto my-8 gap-8 overflow-y-scroll">
         {tasks.map((task, index) => (
-          <div key={index} className="rounded-xl shadow-md shadow-teal-700 bg-slate-800" >
+          <div key={index} className="h-56 rounded-xl shadow-md shadow-teal-700 bg-slate-800 flex flex-col justify-between border" >
             <h3 className="text-2xl text-center py-2 text-teal-400">
               {task.title}
             </h3>
